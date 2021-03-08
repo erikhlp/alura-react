@@ -5,6 +5,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  font-family: Poppins im !important;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -13,18 +15,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+  display: block; 
 }
 
 body {
@@ -36,15 +28,11 @@ ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -54,10 +42,7 @@ table {
   border-spacing: 0;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -80,9 +65,7 @@ textarea {
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -133,8 +116,7 @@ a:focus {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0;
 }
 
@@ -194,10 +176,7 @@ legend {
  * 3. Improve appearance and consistency in all browsers.
  */
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-size: 100%; /* 1 */
   margin: 0; /* 2 */
   vertical-align: baseline; /* 3 */
@@ -209,8 +188,7 @@ textarea {
  * the UA stylesheet.
  */
 
-button,
-input {
+button, input {
   line-height: normal;
 }
 
@@ -221,8 +199,7 @@ input {
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
-button,
-select {
+button, select {
   text-transform: none;
 }
 
@@ -236,10 +213,7 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], /* 1 */ input[type="reset"], input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   *overflow: visible; /* 4 */
@@ -249,8 +223,7 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default;
 }
 
@@ -350,7 +323,7 @@ fieldset {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .chromeframe {
